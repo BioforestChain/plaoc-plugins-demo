@@ -53,7 +53,7 @@ const closeDialog = () => {
     <article class="card-body">
       <h2 class="card-title">Close Watcher</h2>
       <dialog ref="$dialogEle">
-        <div class="modal" :class="{'modal-open': showModal}">
+        <div class="modal" :class="{ 'modal-open': showModal }">
           <div class="modal-box">
             <h3 class="text-lg font-bold">Dialog</h3>
             <p class="py-4">Hi</p>
@@ -64,7 +64,12 @@ const closeDialog = () => {
         </div>
       </dialog>
 
-      <button class="inline-block rounded-full btn btn-accent" @click="openDialog">Open Dialog</button>
+      <button
+        class="inline-block rounded-full btn btn-accent"
+        @click="openDialog"
+      >
+        Open Dialog
+      </button>
     </article>
   </div>
   <div class="divider">LOG</div>
